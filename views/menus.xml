@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <menuitem name="Adminitraccion" id="menu_1_list"/>
+
+        <menuitem name="Usuario" id="admin_erp" parent="menu_1_list"
+                  action="base.action_res_users"
+                  groups="admin_erp.admin_group_user"/>
+
+        <menuitem name="Compañia" id="compañia" parent="menu_1_list"
+                  action="base.action_res_company_form"
+                  groups="admin_erp.admin_group_user"
+
+        />
+        <menuitem name="Correo saliente" id="correo_salinete" parent="menu_1_list"
+                  action="base.action_ir_mail_server_list"
+                  groups="admin_erp.admin_group_user"
+        />
+        <menuitem name="Precision Decimal " id="Presicion_deci" parent="menu_1_list"
+                  action="base.action_decimal_precision_form"
+                  groups="admin_erp.admin_group_user"/>
+    </data>
+</odoo>
